@@ -50,7 +50,7 @@ app.use((req,res,next)=>{
 app.get('/',(req,res,next)=>{
 	console.log('GET / 요청에 실행되는 middleware');
 	next(); //다음 미들웨어로 넘어가려면 next()를 붙여야함.
-},(req,res)=>{
+},(req,res)=>{ // 다수의 콜백함수를 지정가능, 단 next()를 붙여서는 안됨. 단순히 다음 미들웨어로 넘어가기전 실행용
 	throw new Error('에러 발생시 에러 처리 미들웨어로 감')
 })
 
