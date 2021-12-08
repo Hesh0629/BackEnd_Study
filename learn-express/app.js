@@ -55,12 +55,13 @@ const userRouter = require('./routes/user');
 app.use('/routes/index', indexRouter);
 app.use('/routes/user', userRouter);
 app.use((req, res, next) => {
-	console.log('모든 요청에 실행되는 middleware');
-	next(); //다음 미들웨어로 넘어가려면 next()를 붙여야함.
+	console.log('모든 요청에 실행되는 middleware'); // 단, 위에서 send가 발생했다면 CUT
+	next(); 
 });
 app.get('/', (req, res) => {
 	//res.send('hi express');
 	res.sendFile(path.join(__dirname, '/index.html'));
+	//다음 미들웨어로 넘어가려면 next()를 붙여야함.
 	//next()를 이용하지 않는 미들웨어는 sendFile또는 send 등으로 응답을 보내야 함
 	//next('route')다음 라우터로 바로 뜀
 });
