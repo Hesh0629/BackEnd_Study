@@ -1,6 +1,6 @@
 # Node.js_Study  
 <img src="nodejs.png"/>
-<div>SQL 에러 (111) 발생시 : sudo service mysql restart 시행 -> 안되면 혀깨죽</div>
+SQL 에러 (111) 발생시 : sudo service mysql restart 시행 -> 안되면 혀깨죽
 ### References  
 <ul>
 	<li>node.js docs: https://nodejs.org/api/worker_threads.html</li>
