@@ -1,7 +1,7 @@
 # Node.js_Study  
-<img src="nodejs.png"/>
+<img src="nodejs.png"/>  
 SQL 에러 (111) 발생시 : sudo service mysql restart 시행 -> 안되면 혀깨죽  
-### References  
+### References 
 <ul>
 	<li>node.js docs: https://nodejs.org/api/worker_threads.html</li>
 	<li>node js 교과서 github: https://github.com/ZeroCho/nodejs-book</li>
